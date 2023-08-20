@@ -251,6 +251,7 @@ html, body {
       margin-left: auto;
       font-size: 12px;
       text-align: center;
+      text-shadow: none;
     }
     .intro-job {
       font-size: 8px;
