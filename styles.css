@@ -16,6 +16,7 @@ html, body {
 .container {
   display: fixed;
   flex-wrap: wrap;
+  position: relative;
 }
 .main-div {
     display: flex; 
@@ -350,7 +351,7 @@ html, body {
       letter-spacing: 3px;
     }
     .socials {
-      margin-bottom: 10px;
+      margin-bottom: 50px;
       margin-top: 5px;
       gap: 35px; /* Adjust the gap between icons as desired */
     }
@@ -367,6 +368,13 @@ html, body {
   0 0 20px #00b500, 0 0 30px #00b500,
   0 0 50px #00b500;
       transition-delay: 0.15s;
+    }
+    .copywrite-notice {
+      position:absolute;
+      bottom: -5%;
+      left: 1%;
+      color: #ffffff;
+      font-size: 8px;
     }
   }
   

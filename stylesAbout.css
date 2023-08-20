@@ -17,6 +17,7 @@ html, body {
 .container {
     display: fixed;
     flex-wrap: wrap;
+    position: relative;
   }
   .main-div {
       display: flex; 
@@ -273,11 +274,12 @@ html, body {
       border-radius: 10px;
     }
       .copywrite-notice {
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
+        position: absolute;
+        bottom: -3%;
+        left: 1%;
         color: #ffffff;
         font-size: 8px;
+        margin-bottom: 10px;
       }  
       .socials {
         position: fixed;
