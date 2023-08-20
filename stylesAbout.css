@@ -407,6 +407,7 @@ html, body {
       }
       .intro-name {
         font-size: 18px;
+        line-height: 50px;
       }
       .intro-job {
         margin-top: 50px;
@@ -435,16 +436,21 @@ html, body {
         margin-right: 0px; /* Adjust the margin as needed */
       }
       .first-line-experience div {
-        display: inline;
+        display: grid;
+        grid-template-rows: 30px 30px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 100px;
+      }
+      .first-line-experience div i{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         width: 100%;
-        gap: 10px;
       }
       .first-line-experience div p{
         font-size: 8px;
+        margin: 0;
       }
       .second-line-education div p {
         margin: 0;
