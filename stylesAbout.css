@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('Fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+*{
+    background: black;
+    color: white;  
+    box-sizing: border-box;  
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 10px;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: fixed;
+    flex-wrap: wrap;
+  }
+  .main-div {
+      display: flex; 
+      align-items: center;
+      justify-content: space-between; 
+      margin-top: 60px;
+  }
+  .nav-name {
+      margin-left: 80px;
+  }
+  .nav-name img {
+      width: 50px;
+  }
+  .nav-links {
+    margin-right: 105px; /* Adjust as needed for spacing */
+    transition: background-color 0.3s ease;
+  }
+  .border-wrapper {
+    border-top: 2px solid white;
+    width: 450px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 10px; /* Adjust the value as needed to shift the border to the right */
+  }
+  .border-wrapper-bottom {
+    border-bottom: 2px solid white;
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px; /* Adjust the value as needed to shift the border to the right */
+  }
+  .nav-links a{
+      border-radius: 10px;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      z-index: 1;
+      margin-right: 40px;
+  }
+  .nav-links a:hover {
+      background-color: #00b500;
+      box-shadow: 0 0 5px #00b500,
+  0 0 25px #00b500, 0 0 50px #00b500,
+  0 0 100px #00b500, 0 0 180px #00b500;
+      transition-delay: 0.15s;
+  }
+  
+    .nav-links a:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 204, 0, 0.1) 0%, rgba(0, 204, 0, 0.5) 50%, rgba(0, 204, 0, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      animation: electricity-flow 1.5s linear infinite;
+      border-radius: 10px;
+    }
+    .aboutme {
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .aboutme p {
+        text-align: center;
+        font-size: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .border-wrapper-bottom-about {
+        border-bottom: 1px solid white;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+      }
+      .photo img {
+        display: block;
+        margin-top: 90px;
+        width: 300px;
+        margin-left: 200px;
+        margin-right: auto;
+      }
+      .intro-text {
+        margin-top: 100px;
+        display: block;
+        margin-left: 100px;
+        margin-right: auto;
+        border-bottom: 2px white;
+      }
+      .intro-name {
+        margin-top: 100px;
+        display: inline;
+        font-size: 30px;
+        text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
+      }  
+      .intro-job {
+        line-height: 2;
+        letter-spacing: 1px;
+        max-width: 580px;
+      }
+      .experience {
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
+      }
+      .experience-text {
+        text-align: center;
+        font-size: 30px;
+      }
+      .border-wrapper-bottom-experience {
+        border-bottom: 1px solid white;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .first-line-experience {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px; /* Adjust the margin as needed */
+      }
+      
+      .first-line-experience > div {
+        display: flex;
+        align-items: center;
+      }
+      
+      .first-line-experience i {
+        margin-right: 5px; /* Adjust the margin as needed */
+      }
+      .first-line-experience p {
+        margin: 0; /* Remove default margin */
+        margin-right: 40px;
+        margin-left: 10px;
+      }
+    .fa-solid {
+        font-size: 20px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .education {
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
+      }
+      .education-text {
+        text-align: center;
+        font-size: 30px;
+      }
+      .info-experience {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .info-experience p{
+        margin-top: 30px;
+    }
+      .align-education {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .first-line-education {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px; /* Adjust the margin as needed */
+      }
+      
+      .first-line-education > div {
+        display: flex;
+        align-items: center;
+        margin-right: 20px; /* Increase the margin to add more spacing */
+      }
+      
+      .first-line-education p {
+        margin-top: 10px;
+        margin-left: 10px; /* Increase the margin to add more spacing */
+        margin-right: 30px;
+    }      
+    .second-line-education {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px; /* Adjust the margin as needed */
+      }
+      
+      .second-line-education > div {
+        display: flex;
+        align-items: center;
+        margin-right: 20px; /* Increase the margin to add more spacing */
+      }
+      
+      .second-line-education p {
+        margin-top: 10px;
+        margin-left: 10px; /* Increase the margin to add more spacing */
+        margin-right: 5px;
+    }  
+    .download {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .download a {
+        border-radius: 10px;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      z-index: 1;
+      margin-right: 40px;
+      font-size: 15px;
+    }
+    .download a:hover{
+        background-color: #00b500;
+      box-shadow: 0 0 5px #00b500,
+  0 0 25px #00b500, 0 0 50px #00b500,
+  0 0 100px #00b500, 0 0 180px #00b500;
+      transition-delay: 0.15s;
+    }
+    .download a:hover::before {
+        content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 204, 0, 0.1) 0%, rgba(0, 204, 0, 0.5) 50%, rgba(0, 204, 0, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      animation: electricity-flow 1.5s linear infinite;
+      border-radius: 10px;
+    }
+      .copywrite-notice {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        color: #ffffff;
+        font-size: 8px;
+      }  
+      .socials {
+        position: fixed;
+        top: 50%; /* Adjust the position from the top as needed */
+        left: 0;
+        transform: translateY(-50%);
+      }
+      .socials a {
+        display: block;
+        margin-bottom: 10px; /* Adjust the spacing between links */
+        margin-left: 10px;
+      }
+      .fa-linkedin {
+        font-size: 20px; /* Adjust the size as desired */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+      }
+      .fa-github {
+        font-size: 20px; /* Adjust the size as desired */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        transition: transform 0.3s ease;
+      }
+      .fa-facebook {
+        font-size: 20px; /* Adjust the size as desired */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        transition: transform 0.3s ease;
+      }
+      .fa-instagram {
+        border-radius: 20px;
+        font-size: 20px; /* Adjust the size as desired */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+      }
+      .fa-facebook:hover,
+      .fa-github:hover,
+      .fa-instagram:hover,
+      .fa-linkedin:hover {
+        transform: scale(1.3);
+        box-shadow: 0 0 10px #00b500, 0 0 20px #00b500
+        , 0 0 50px #00b500, 0 0 60px #00b500, 0 0 90px #00b500;
+        background-color: #00b500;
+      }   
+    @keyframes electricity-flow {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+          box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #00b500, 0 0 100px #00b500, 0 0 180px #00b500;
+        }
+        30% {
+          opacity: 1;
+          box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #00b500, 0 0 100px #00b500, 0 0 180px #00b500, inset 0 0 8px rgba(255, 255, 255, 0.7);
+        }
+        40% {
+          opacity: 0;
+          box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #289a09, 0 0 100px #00b500, 0 0 180px #289a09;
+        }
+        100% {
+          opacity: 0;
+        }
+      }

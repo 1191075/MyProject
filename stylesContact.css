@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('Fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+*{
+    background: black;
+    color: white;  
+    box-sizing: border-box;  
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: 10px;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 60px;
+}
+.nav-name {
+    margin-left: 80px;
+}
+.nav-name img {
+    width: 50px;
+}
+.nav-links {
+  margin-right: 105px; /* Adjust as needed for spacing */
+  transition: background-color 0.3s ease;
+}
+.border-wrapper {
+  border-top: 2px solid white;
+  width: 450px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 10px; /* Adjust the value as needed to shift the border to the right */
+}
+.border-wrapper-bottom {
+  border-bottom: 2px solid white;
+  width: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px; /* Adjust the value as needed to shift the border to the right */
+}
+.nav-links a{
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    margin-right: 40px;
+}
+.nav-links a:hover {
+    background-color: #00b500;
+    box-shadow: 0 0 5px #00b500,
+0 0 25px #00b500, 0 0 50px #00b500,
+0 0 100px #00b500, 0 0 180px #00b500;
+    transition-delay: 0.15s;
+}
+.socials {
+    position: fixed;
+    top: 50%; /* Adjust the position from the top as needed */
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .socials a {
+    display: block;
+    margin-bottom: 10px; /* Adjust the spacing between links */
+    margin-left: 10px;
+  }
+  .fa-code, .fa-computer, .fa-bolt, .fa-microchip {
+    font-size: 20px; /* Adjust the size as desired */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .fa-linkedin, .fa-github, .fa-instagram, .fa-facebook {
+    font-size: 20px; /* Adjust the size as desired */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  .fa-facebook:hover,
+  .fa-github:hover,
+  .fa-instagram:hover,
+  .fa-linkedin:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px #00b500, 0 0 20px #00b500
+    , 0 0 50px #00b500, 0 0 60px #00b500, 0 0 90px #00b500;
+    background-color: #00b500;
+  }   
+  .copywrite-notice {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      color: #ffffff;
+      font-size: 8px;
+    }
+  .nav-links a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 204, 0, 0.1) 0%, rgba(0, 204, 0, 0.5) 50%, rgba(0, 204, 0, 0.1) 100%);
+    z-index: -1;
+    opacity: 0;
+    animation: electricity-flow 1.5s linear infinite;
+    border-radius: 10px;
+  }
+.container {
+    position: flex;
+    width: 100%;
+    height: 100%;
+}
+form {
+    max-width: 550px;
+    width: 90%;
+    background: black;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 30px;
+    text-shadow: 0 0 5px #00b500,
+  0 0 25px #00b500, 0 0 50px #00b500,
+  0 0 100px #00b500, 0 0 180px #00b500;
+}
+label {
+    font-size: 14px;
+    display: block;
+    margin: 20px 0;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none; 
+    border: none;
+    border-bottom: 1px solid white;
+}
+input::placeholder, textarea::placeholder {
+  color:rgb(189, 189, 189);
+  text-align: center;
+}
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid #00b500;
+    line-height: 20px;
+}
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: #00b500;
+}
+.center {
+    text-align: center;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 200px;
+    background: linear-gradient(to right,#339c16, #00b500);
+    color: white;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.2s ease;
+}
+input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+@keyframes electricity-flow {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+      box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #00b500, 0 0 100px #00b500, 0 0 180px #00b500;
+    }
+    30% {
+      opacity: 1;
+      box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #00b500, 0 0 100px #00b500, 0 0 180px #00b500, inset 0 0 8px rgba(255, 255, 255, 0.7);
+    }
+    40% {
+      opacity: 0;
+      box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 50px #289a09, 0 0 100px #00b500, 0 0 180px #289a09;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

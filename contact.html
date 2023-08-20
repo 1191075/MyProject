@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesContact.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Tiago Sá Pereira</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div class = "container">
+        <header class="main-header">
+            <div class="main-div">
+                <div class="nav-name">
+                    <img src="images/logo.png">
+                </div>
+                <div class="nav-links">
+                    <div class="border-wrapper"></div>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                    <div class="border-wrapper-bottom"></div>
+                </div>
+            </div>
+        </header>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h1>Get in touch!</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="Name" placeholder="Your name" required>
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" rows = "6" required></textarea>
+
+            <div class ="center">
+                <input type="submit" value="Send message">
+            </div>
+        </form>
+        <div class = "socials">
+            <a href="https://www.linkedin.com/in/tiagoassp/">
+                <i class="fa-brands fa-linkedin" style="color:white;"></i>
+            </a>
+            <a href="https://github.com/tiagoassp">
+                <i class="fa-brands fa-github" style="color: white;"></i>
+            </a>
+            <a href="https://www.facebook.com/tiagao.pereira/">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.instagram.com/tiagoassp/">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+        </div>
+        <div class="copywrite-notice">
+            &copy; 2023 tiagoassp. All rights reserved.
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jalamente@gmail.com",
+                Password : "8F4C0370BBDEF89DED07062475DFDE4FDD12",
+                To : 'tiagoassp@gmail.com',
+                From : "jalamente@gmail.com",
+                Subject : "Website Contact",
+                Body : "Name: " + document.getElementById("Name").value +
+                "<br> Email: " + document.getElementById("email").value +
+                "<br> Message: "  + document.getElementById("message").value          
+            }).then(
+                message => alert(message)
+                );
+        }
+    </script>
+</body>
+</html>
