@@ -346,9 +346,10 @@ html, body {
       font-size: 8px;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 30px;
+      margin-top: 40px;
       text-align: center;
       letter-spacing: 3px;
+      line-height: 20px;
     }
     .socials {
       margin-bottom: 50px;
@@ -360,7 +361,7 @@ html, body {
       margin-right: auto;
       margin-left: auto;
       margin-top: 10px;
-      text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
+      text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 20px #00b500, 0 0 30px #00b500;
     }
     .nav-links a:hover {
       background-color: #00b500;
