@@ -185,98 +185,7 @@ html, body {
       opacity: 0;
     }
   }
-  @media only screen and (max-width: 480px) {
-    .main-div {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-    }
-    .intro {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    .nav-name {
-      margin: 10px;
-      align-items: center;
-    }
 
-    .nav-links {
-      margin: 10px;
-    }
-    .border-wrapper {
-      width: 200px;
-      margin: auto;
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-    .border-wrapper-bottom {
-      width: 200px;
-      margin: auto;
-      padding-bottom: 10px;
-      padding-top: 0px;
-    }
-    .nav-links a {
-      display: flex;
-      width: 100px;
-      justify-content: center;
-      margin: auto;
-      margin-top: 10px;
-      padding: 10px;
-    }
-
-    .photo img {
-      width: 200px;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-    }
-
-    .intro-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-      margin-top: 20px;
-      order: -1;
-    }
-    
-    .intro-name {
-      margin-right: auto;
-      margin-left: auto;
-      font-size: 12px;
-      text-align: center;
-    }
-    
-    .intro-job {
-      font-size: 8px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 30px;
-      text-align: center;
-      letter-spacing: 3px;
-    }
-    .socials {
-      margin-bottom: 10px;
-      margin-top: 5px;
-      gap: 35px; /* Adjust the gap between icons as desired */
-    }
-    .myname {
-      font-size: 14px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 10px;
-      text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
-    }
-    .nav-links a:hover {
-      background-color: #00b500;
-      box-shadow: 0 0 2px #00b500,
-  0 0 20px #00b500, 0 0 30px #00b500,
-  0 0 50px #00b500;
-      transition-delay: 0.15s;
-    }
-  }
   @media screen and (max-width: 850px) {
     
     .main-div {
@@ -310,10 +219,12 @@ html, body {
     }
     .nav-links a {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100px;
       justify-content: center;
       margin: auto;
-      margin-top: 10px;
+      margin-top: 30px;
       padding: 10px;
     }
 
@@ -365,8 +276,7 @@ html, body {
     .nav-links a:hover {
       background-color: #00b500;
       box-shadow: 0 0 2px #00b500,
-  0 0 20px #00b500, 0 0 30px #00b500,
-  0 0 50px #00b500;
+  0 0 20px #00b500, 0 0 30px #00b500;
       transition-delay: 0.15s;
     }
     .copywrite-notice {
@@ -375,6 +285,26 @@ html, body {
       left: 1%;
       color: #ffffff;
       font-size: 8px;
+    }
+    @keyframes electricity-flow {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+        box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 40px #00b500;
+      }
+      30% {
+        opacity: 1;
+        box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 40px #00b500;
+      }
+      40% {
+        opacity: 0;
+        box-shadow: 0 0 5px #00b500, 0 0 25px #00b500, 0 0 40px #289a09;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   }
   
