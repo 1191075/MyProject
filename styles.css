@@ -102,6 +102,7 @@ html, body {
   .myname {
     font-size: 23px;
     text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
+    -webkit-text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
   }
   .intro-job {
     font-size: 10px;
