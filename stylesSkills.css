@@ -300,8 +300,7 @@ html, body {
         align-items: center;
         width: 100px;
         justify-content: center;
-        margin: auto;
-        margin-top: 30px;
+        margin: 30px auto;
         padding: 10px;
       }
       .socials {
