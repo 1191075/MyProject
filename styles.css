@@ -78,28 +78,31 @@ html, body {
     border-radius: 10px;
   }
   .intro {
-    display: flex;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
   }
+  .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .photo img {
-    display: block;
-    margin-top: 90px;
     width: 300px;
-    margin-left: 200px;
-    margin-right: auto;
   }
   .intro-text {
-    margin-top: 60px;
-    display: block;
-    margin-left: 100px;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     border-bottom: 2px white;
   }
   .intro-name {
-    display: inline;
     font-size: 20px;
   }  
   .myname {
+    line-height: 40px;
     font-size: 23px;
     text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
     -webkit-text-shadow: 0 0 10px #00b500, 0 0 20px #00b500, 0 0 30px #00b500, 0 0 40px #00b500, 0 0 50px #00b500, 0 0 70px #00b500;
@@ -237,7 +240,10 @@ html, body {
       margin-right: auto;
       display: flex;
     }
-
+    .intro {
+      grid-template-columns: none;
+      grid-template-rows: 200px 200px;
+    }
     .intro-text {
       display: flex;
       flex-direction: column;
@@ -266,7 +272,7 @@ html, body {
     }
     .socials {
       margin-bottom: 50px;
-      margin-top: 5px;
+      margin-top: 5%;
       gap: 35px; /* Adjust the gap between icons as desired */
     }
     .myname {
